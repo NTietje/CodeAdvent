@@ -103,3 +103,8 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+
+/shelf/Uncommitted_changes_before_Checkout_at_26_02_2022_23_16_[Changes]/shelved.patch
+/shelf/Uncommitted_changes_before_Checkout_at_26_02_2022_23_16_[Changes]1/shelved.patch
+/shelf/Uncommitted_changes_before_Checkout_at_26_02_2022_23_16__Changes_.xml
