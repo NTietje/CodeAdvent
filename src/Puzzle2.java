@@ -12,7 +12,7 @@ public class Puzzle2 {
     private final int result;
 
     public Puzzle2() {
-        //read input file and parse into Integer
+        //read input file
         String filepath = "inputs/input_2.txt";
         TxtReader reader = new TxtReader();
         ArrayList<String> lines = reader.read(filepath);
@@ -24,18 +24,16 @@ public class Puzzle2 {
         for (String line : lines) {
             String command = line.split(" ")[0];
             int value = Integer.parseInt(line.split(" ")[1]);
+            //check command string
             if (command.equals("forward")) {
                 forward += value;
                 depth += aim * value;
-                System.out.println("Forward:" + forward);
             }
             else if (command.equals("down")) {
                 aim += value;
-                System.out.println("Depth:" + depth);
             }
             else {
                 aim -= value;
-                System.out.println("Depth:" + depth);
             }
         }
         result = depth * forward;

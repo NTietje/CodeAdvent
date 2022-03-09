@@ -14,9 +14,9 @@ public abstract class Reader {
     /*
     * method for parsing a String ArrayList into Integer
     *
-    * @param input      text you want to parse to Integers
-    * @return numbers   parsed Integers in an ArrayList
-    * */
+    * @param input - text you want to parse to Integers
+    * @return numbers - parsed Integers in an ArrayList
+    */
     public ArrayList<Integer> toIntegerList(ArrayList<String> input){
         ArrayList<Integer> numbers = new ArrayList<>();
         for (String numberString : input) {

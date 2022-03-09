@@ -10,12 +10,13 @@ public class TxtReader extends Reader{
     /*
      * reads the txt file with an BufferedReader and FileReader
      *
-     * @param filepath      input location with .txt ending
-     * @return text         reading input, as ArrayList
-     * */
+     * @param filepath - input location with .txt ending
+     * @return text - reading input, as ArrayList
+     */
     @Override
     ArrayList<String> read(String filepath) {
         ArrayList<String> text = new ArrayList<>();
+        //@link https://www.guru99.com/buffered-reader-in-java.html
         try {
             BufferedReader bufReader = new BufferedReader(new FileReader(filepath));
             String currentLine;
